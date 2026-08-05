@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ConceptTag from "../components/ConceptTag.astro";
+import CompareLink from "../components/CompareLink.astro";
+---
+<Layout title="Nosso Painel de Busca | Pizza do Zé Delivery">
+  <ConceptTag bloco="Entidade" numero={10} nome="Knowledge Panel" />
+  <h1>Nosso Painel de Busca</h1>
+  <p class="mock-label">Simulação ilustrativa — não é a interface real do Google.</p>
+  <div class="mock-panel">
+    <strong>Painel não gerado</strong><br />
+    O Google não tem confiança suficiente nos dados pra montar um card de entidade.
+  </div>
+  <CompareLink slug="knowledge-panel" />
+</Layout>

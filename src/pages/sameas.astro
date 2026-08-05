@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ConceptTag from "../components/ConceptTag.astro";
+import CompareLink from "../components/CompareLink.astro";
+---
+<Layout title="Nossos Perfis | Pizza do Zé Delivery">
+  <ConceptTag bloco="Entidade" numero={7} nome="SameAs (verificação de entidade)" />
+  <h1>Nossos Perfis</h1>
+  <p>Nenhum aponta pro outro, e o nome muda em cada um:</p>
+  <ul>
+    <li>Instagram: <em>@pizza.do.ze.oficial</em> (perfil "Pizza do Zé")</li>
+    <li>Facebook: <em>Pizzaria Zé Delivery SP</em></li>
+    <li>iFood: <em>Zé Pizzas Express</em></li>
+  </ul>
+  <CompareLink slug="sameas" />
+</Layout>

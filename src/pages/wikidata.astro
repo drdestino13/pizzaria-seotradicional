@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ConceptTag from "../components/ConceptTag.astro";
+import CompareLink from "../components/CompareLink.astro";
+---
+<Layout title="Wikidata | Pizza do Zé Delivery">
+  <ConceptTag bloco="Entidade" numero={8} nome="Wikidata e Wikipédia" />
+  <h1>Fontes Externas</h1>
+  <p>
+    Nem esperamos estar no Wikidata (pizzaria de bairro não precisa), mas também não
+    temos NENHUMA fonte externa confiável confirmando quem somos — nem Wikidata, nem
+    perfis consistentes (veja <a href="/sameas">SameAs</a>).
+  </p>
+  <CompareLink slug="wikidata" />
+</Layout>

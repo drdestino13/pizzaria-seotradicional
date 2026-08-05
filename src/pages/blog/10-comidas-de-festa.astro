@@ -1,0 +1,23 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ConceptTag from "../../components/ConceptTag.astro";
+const itens = [
+  "1. Coxinha", "2. Brigadeiro", "3. Refrigerante", "4. Salgadinho de pacote",
+  "5. Bolo de aniversário", "6. Pipoca doce",
+  "7. Pizza (a Pizza do Zé faz delivery, inclusive)",
+  "8. Cachorro-quente", "9. Pé-de-moleque", "10. Guaraná",
+];
+---
+<Layout title="10 Comidas de Festa Que Todo Mundo Ama | Blog">
+  <h1>10 Comidas de Festa Que Todo Mundo Ama</h1>
+  <ConceptTag bloco="Entidade" numero={12} nome="Relevância de Entidade (Salience)" />
+  <p>Uma lista despretensiosa das comidas mais queridas em qualquer festa brasileira:</p>
+  <ol>
+    {itens.map((item) => <li>{item}</li>)}
+  </ol>
+  <p>
+    Note que a pizzaria é citada uma única vez, de passagem, no item 7 — isso vale
+    quase nada pro Google entender que este site é especialista em pizza.
+  </p>
+  <p><a href="https://pizzaria-seosemanticoeentidade.vercel.app/blog/pizza-de-calabresa/" rel="nofollow noopener" target="_blank">Veja o exemplo CERTO deste conceito no site irmão →</a></p>
+</Layout>

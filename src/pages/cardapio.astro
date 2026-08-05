@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const produtoSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Pizza Calabresa Grande",
+  offers: { "@type": "Offer", price: "45.00", priceCurrency: "BRL" },
+};
+---
+<Layout title="Cardápio | Pizza do Zé Delivery">
+  <h1>Cardápio</h1>
+  <p>
+    Veja o que isso significa em <a href="/schema-de-entidade/">Schema de Entidade</a>
+    e <a href="/json-ld-grafo/">JSON-LD: o Grafo de Propriedades</a>.
+  </p>
+  <ul>
+    <li>Pizza Calabresa Grande — R$ 45,00</li>
+    <li>Pizza Mussarela Grande — R$ 42,00</li>
+    <li>Pizza Napolitana Grande — R$ 48,00</li>
+  </ul>
+  <script type="application/ld+json" set:html={JSON.stringify(produtoSchema)} />
+</Layout>

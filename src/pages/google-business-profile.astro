@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ConceptTag from "../components/ConceptTag.astro";
+import CompareLink from "../components/CompareLink.astro";
+---
+<Layout title="Nosso Perfil no Google | Pizza do Zé Delivery">
+  <ConceptTag bloco="Entidade" numero={9} nome="Google Business Profile" />
+  <h1>Nosso Perfil no Google</h1>
+  <p class="mock-label">Simulação ilustrativa — não é a interface real do Google.</p>
+  <div class="mock-panel">
+    <strong>Perfil incompleto</strong><br />
+    Nome cadastrado: "Pizzaria Zé" (site diz "Pizzaria Barata do Zé", Instagram diz
+    "Pizza do Zé")<br />
+    Sem foto · Sem horário · 3 telefones diferentes no ar
+  </div>
+  <CompareLink slug="google-business-profile" />
+</Layout>

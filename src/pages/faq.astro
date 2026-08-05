@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ConceptTag from "../components/ConceptTag.astro";
+import CompareLink from "../components/CompareLink.astro";
+---
+<Layout title="Contato | Pizza do Zé Delivery">
+  <ConceptTag bloco="Semântico" numero={6} nome="Query Fan-Out (ausência)" />
+  <h1>Contato</h1>
+  <p class="keyword-stuffed">A melhor pizza da cidade. Ligue: (11) 9999-0000.</p>
+  <p>
+    (Sem resposta sobre preço, tempo de entrega, área atendida, opções sem lactose ou
+    horário de funcionamento. Quem perguntou "dá pra jantar hoje?" tem que ligar e
+    perguntar tudo de novo por telefone.)
+  </p>
+  <CompareLink slug="faq" />
+</Layout>

@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ConceptTag from "../components/ConceptTag.astro";
+import CompareLink from "../components/CompareLink.astro";
+---
+<Layout title="Fichas Soltas | Pizza do Zé Delivery">
+  <ConceptTag bloco="Entidade" numero={5} nome="JSON-LD: o Grafo de Propriedades (ausência)" />
+  <h1>Fichas Soltas, Não um Grafo</h1>
+  <p>
+    Cada sabor de pizza tem um bloco de schema <code>Product</code> isolado, sem
+    nenhum <code>@id</code> conectando esse produto a um negócio, a um dono ou a um
+    site. Vinte blocos desconectados valem menos que um bloco onde tudo se amarra —
+    e nós nem temos vinte blocos conectados, temos zero.
+  </p>
+  <pre class="code-block">{`{
+  "@type": "Product",
+  "name": "Pizza Calabresa Grande"
+  // sem @id, sem isPartOf, sem brand apontando
+  // pra nenhum negócio — fica solto no ar
+}`}</pre>
+  <CompareLink slug="json-ld-grafo" />
+</Layout>

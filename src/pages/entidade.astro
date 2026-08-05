@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ConceptTag from "../components/ConceptTag.astro";
+import CompareLink from "../components/CompareLink.astro";
+---
+<Layout title="Quem Somos | Pizza do Zé Delivery">
+  <ConceptTag bloco="Entidade" numero={1} nome="Entidade" />
+  <h1>Quem Somos</h1>
+  <p>
+    "Pizzaria" é só mais uma palavra que a gente repete bastante nas nossas páginas.
+    Não temos nenhum dado estruturado dizendo ao Google que existe um negócio real
+    por trás do site (veja o código-fonte: não existe nenhum <code>LocalBusiness</code>
+    ou <code>Organization</code> aqui, só schema de produto em cada sabor de pizza,
+    na página <a href="/cardapio">Cardápio</a>).
+  </p>
+  <CompareLink slug="entidade" />
+</Layout>

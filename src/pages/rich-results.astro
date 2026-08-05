@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ConceptTag from "../components/ConceptTag.astro";
+import CompareLink from "../components/CompareLink.astro";
+---
+<Layout title="Como Aparecemos no Resultado de Busca | Pizza do Zé Delivery">
+  <ConceptTag bloco="Entidade" numero={11} nome="Rich Results" />
+  <h1>Como Aparecemos no Resultado de Busca</h1>
+  <p class="mock-label">Simulação ilustrativa — não é a interface real do Google.</p>
+  <div class="snippet-fake">
+    <div class="url">pizzaria-seotradicional.vercel.app</div>
+    <div class="title">Pizza em Moema, pizzaria em Moema, delivery pizza Moema...</div>
+    <div>Sem estrelas, sem horário, sem FAQ — resultado azul comum, sem nenhum enfeite.</div>
+  </div>
+  <CompareLink slug="rich-results" />
+</Layout>

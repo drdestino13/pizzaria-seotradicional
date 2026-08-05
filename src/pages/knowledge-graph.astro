@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ConceptTag from "../components/ConceptTag.astro";
+import CompareLink from "../components/CompareLink.astro";
+---
+<Layout title="Nossos Dados | Pizza do Zé Delivery">
+  <ConceptTag bloco="Entidade" numero={2} nome="Knowledge Graph" />
+  <h1>Nossos Dados</h1>
+  <table>
+    <tr><td>Neste site</td><td>Pizza do Zé Delivery, (11) 9999-0000</td></tr>
+    <tr><td>Instagram</td><td>@pizza.do.ze.oficial, "Pizza do Zé"</td></tr>
+    <tr><td>Google Meu Negócio</td><td>"Pizzaria Zé", telefone diferente</td></tr>
+  </table>
+  <p>
+    Nosso endereço aparece de um jeito aqui, de outro no Instagram e de um terceiro
+    jeito no Google Meu Negócio. Telefone também muda. O Google não consegue montar
+    uma ficha confiável com informação que não bate.
+  </p>
+  <CompareLink slug="knowledge-graph" />
+</Layout>

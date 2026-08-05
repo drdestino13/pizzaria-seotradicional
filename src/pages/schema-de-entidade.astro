@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ConceptTag from "../components/ConceptTag.astro";
+import CompareLink from "../components/CompareLink.astro";
+
+const produtoSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Pizza Calabresa Grande",
+  offers: { "@type": "Offer", price: "45.00", priceCurrency: "BRL" },
+};
+---
+<Layout title="Schema do Nosso Site | Pizza do Zé Delivery">
+  <ConceptTag bloco="Entidade" numero={4} nome="Schema de Entidade (ausência)" />
+  <h1>Schema do Nosso Site</h1>
+  <p>
+    Este é o único tipo de schema que existe no nosso site inteiro — schema de
+    <code>Product</code>, repetido em cada sabor de pizza. Em nenhum lugar existe um
+    <code>LocalBusiness</code> ou <code>Restaurant</code> dizendo ao Google que existe
+    um NEGÓCIO real por trás do cardápio:
+  </p>
+  <pre class="code-block">{JSON.stringify(produtoSchema, null, 2)}</pre>
+  <CompareLink slug="schema-de-entidade" />
+</Layout>
