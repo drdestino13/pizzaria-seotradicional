@@ -1,23 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ConceptTag from "../components/ConceptTag.astro";
-import CompareLink from "../components/CompareLink.astro";
 ---
 <Layout title="Pizza, Marmita, Açaí e Sushi | Pizza do Zé Delivery">
-  <ConceptTag bloco="Semântico" numero={5} nome="Cluster de Conteúdo (ausência)" />
   <h1>Vendemos de Tudo Um Pouco</h1>
-  <p>
-    Não existe nenhuma página central "tudo sobre pizza" amarrando um assunto por
-    completo. Em vez disso, temos páginas soltas sobre assuntos completamente
-    diferentes, sem nenhum link entre elas e sem nenhum hub organizando o conteúdo:
-  </p>
+  <p>Confira nosso cardápio variado:</p>
   <div class="related-links">
     <ul>
-      <li><a href="/marmita">Marmita fitness</a></li>
-      <li><a href="/acai">Açaí na tigela</a></li>
-      <li><a href="/sushi">Sushi delivery</a></li>
+      <li><a href="/marmita">Marmita fitness</a> - a partir de R$ 22,00</li>
+      <li><a href="/acai">Açaí na tigela</a> - a partir de R$ 15,00</li>
+      <li><a href="/sushi">Sushi delivery</a> - combinados a partir de R$ 39,90</li>
     </ul>
   </div>
-  <p>Achamos que escrever de tudo um pouco "uma hora emplaca". Não emplaca.</p>
-  <CompareLink slug="pizza-artesanal" />
+  <h2>Pizza</h2>
+  <ul>
+    <li>Calabresa - R$ 42,00</li>
+    <li>Mussarela - R$ 38,00</li>
+  </ul>
+  <h2>Por Que Escolher a Gente</h2>
+  <p>Fazemos um pouco de tudo pra atender qualquer gosto da família, num só lugar.</p>
 </Layout>

@@ -1,17 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ConceptTag from "../components/ConceptTag.astro";
-import CompareLink from "../components/CompareLink.astro";
 ---
-<Layout title="Nossos Diretórios | Pizza do Zé Delivery">
-  <ConceptTag bloco="Tradicional" numero={5} nome="Diretórios e Troca de Links" />
-  <h1>Nossos Diretórios</h1>
-  <p>Estamos cadastrados em mais de 80 diretórios genéricos (veja o rodapé desta página) e trocamos link com qualquer site que aceite:</p>
-  <ul>
-    <li><a href="#">Colchões Silva</a></li>
-    <li><a href="#">Piscinas do Bairro</a></li>
-    <li><a href="#">Horóscopo Diário</a></li>
-  </ul>
-  <p>Ninguém que compra colchão está com fome de pizza.</p>
-  <CompareLink slug="diretorios" />
+<Layout title="Onde Nos Encontrar | Pizza Barata do Zé">
+  <h1>Onde Nos Encontrar</h1>
+  <p>Confira todos os diretórios onde nosso site está cadastrado:</p>
+  <div class="directory-grid">
+    {Array.from({ length: 24 }).map((_, i) => (
+      <span class="badge">Diretório Nº{i + 1}</span>
+    ))}
+    <span class="badge">…e mais 56 diretórios genéricos</span>
+  </div>
+  <h2>Por Que Tantos Diretórios?</h2>
+  <p>Acreditamos que quanto mais lugares o nosso nome aparecer, melhor. Por isso cadastramos o site em todos os diretórios que encontramos.</p>
 </Layout>

@@ -1,12 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ConceptTag from "../components/ConceptTag.astro";
-import CompareLink from "../components/CompareLink.astro";
 ---
-<Layout title="Nossos Números | Pizza do Zé Delivery">
-  <ConceptTag bloco="Tradicional" numero={4} nome="PageRank Clássico" />
-  <h1>Nossos Números</h1>
-  <p>Olha nosso número de links, quantidade é o que importa:</p>
-  <div class="stat-box">🔗 1.204 links apontando pro site (não importa de onde vêm)</div>
-  <CompareLink slug="autoridade-de-links" />
+<Layout title="Quem Confia na Gente | Pizza Barata do Zé">
+  <h1>Quem Confia na Gente</h1>
+  <p>Mais de 500 sites já linkaram pra gente! Confira alguns:</p>
+  <ul>
+    <li><a href="#">Diretório de Empresas SP</a></li>
+    <li><a href="#">Lista de Delivery Brasil</a></li>
+    <li><a href="#">Cadastro Nacional de Restaurantes</a></li>
+    <li><a href="#">Guia Comercial de São Paulo</a></li>
+    <li><a href="#">Portal de Classificados</a></li>
+    <li><a href="#">Índice de Sites Brasileiros</a></li>
+  </ul>
+  <h2>Por Que Isso Importa</h2>
+  <p>Quanto mais sites apontarem pra nós, mais confiável ficamos aos olhos do Google. Por isso buscamos link em todo lugar possível.</p>
 </Layout>
