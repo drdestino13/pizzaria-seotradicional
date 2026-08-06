@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pizzaria-seotradicional.vercel.app/sitemap.xml
