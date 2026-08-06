@@ -7,14 +7,24 @@ const produtoSchema = {
   name: "Pizza Calabresa Grande",
   offers: { "@type": "Offer", price: "45.00", priceCurrency: "BRL" },
 };
+
+const sabores = [
+  { nome: "Pizza Calabresa Grande", preco: "45,00", foto: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&q=80" },
+  { nome: "Pizza Mussarela Grande", preco: "42,00", foto: "https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=400&q=80" },
+  { nome: "Pizza Napolitana Grande", preco: "48,00", foto: "https://images.unsplash.com/photo-1548369937-47519962c11a?w=400&q=80" },
+];
 ---
 <Layout title="Cardápio | Pizza do Zé Delivery">
   <h1>Cardápio</h1>
   <p>Cardápio simples, sem nenhuma estrutura ou organização especial.</p>
-  <ul>
-    <li>Pizza Calabresa Grande — R$ 45,00</li>
-    <li>Pizza Mussarela Grande — R$ 42,00</li>
-    <li>Pizza Napolitana Grande — R$ 48,00</li>
-  </ul>
+  <div class="menu-grid">
+    {sabores.map((s) => (
+      <div class="menu-item">
+        <img src={s.foto} alt="foto" loading="lazy" />
+        {s.nome} — <span class="price">R$ {s.preco}</span>
+        <button class="add-to-cart" type="button">COMPRAR</button>
+      </div>
+    ))}
+  </div>
   <script type="application/ld+json" set:html={JSON.stringify(produtoSchema)} />
 </Layout>
